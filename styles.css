@@ -304,7 +304,6 @@ section {
     
         .slideOutNav {
             background-color: white;
-            color: white;
             position: fixed;
             top: 0;
             width: 100%;
@@ -317,11 +316,17 @@ section {
             transition: 0.7s;
         }
     
+        .navListItem {
+            list-style-type: none;
+            color: #000;
+        }
+
         .mobileNavItem {
             display: block;
             width: 100%;
             padding: 25px;
-            background-color: #FF6DCD;
+            background-color: #45DFCD;
+            color: #000;
             border-bottom: 2px solid white;
             text-decoration: none;
         }
@@ -363,7 +368,7 @@ section {
         .mobileNavIcon,
         .menuClose {
             background-color: transparent;
-            color: #f45656;
+            color: #FFA02A;
             border: none;
             cursor: pointer;
         }
