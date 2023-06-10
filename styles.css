@@ -269,3 +269,60 @@ section {
 }
 
 /* *********************MEDIA QUERIES************************* */
+@media (max-width: 1080px) {
+    .wrapper{
+        width: 90%;
+    }
+    .navLinks {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2,h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .aboutMeTextAndPic {
+        flex-direction: column-reverse;
+    }
+
+        .aboutMeTextContainer, .famPicContainer {
+            width: 100%;
+        }
+
+        .contact {
+            flex-direction: column;
+        }
+
+        .contact > h2 {
+            margin-bottom: 10px;
+        }
+
+        .projectContainer {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .projectImg {
+            width: 80%;
+        }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    /* Adjust styles for landscape phones and down */
+    .socialLink {
+            font-size: 1rem
+    }
+}
