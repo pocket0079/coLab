@@ -70,6 +70,16 @@ nav {
     align-items: center;
 }
 
+.mobileNavContainer {
+    display: none;
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
 .navLinks {
     display: flex;
     flex-direction: row;
@@ -288,7 +298,82 @@ section {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-
+    .navBar {
+            display: none;
+        }
+    
+        .slideOutNav {
+            background-color: white;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 100%;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            z-index: 20;
+            right: -946px;
+            transition: 0.7s;
+        }
+    
+        .mobileNavItem {
+            display: block;
+            width: 100%;
+            padding: 25px;
+            background-color: #FF6DCD;
+            border-bottom: 2px solid white;
+            text-decoration: none;
+        }
+    
+        .mobileNavItem>a :focus,
+        .mobileNavItem>a :hover {
+            background-color: wheat;
+        }
+    
+        .mobileMenuAndCloseContainer {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+        }
+    
+        .mobileNav {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .mobileNavContainer {
+            display: flex;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            padding: 30px 30px 0;
+        }
+    
+        .open {
+            right: 0;
+        }
+    
+        .hamburgerIcon {
+            font-size: 1.7rem;
+        }
+    
+        .mobileNavIcon,
+        .menuClose {
+            background-color: transparent;
+            color: #f45656;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .menuClose {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 22px 30px 0;
+        }
 }
 
 /* Landscape phone to portrait tablet */

@@ -14,10 +14,32 @@
 <body>
     <main>
         <div class="wrapper"  id="wrapper">
-        <nav>
+        <!-- **********mobile nav******** -->
+        <div class="navIcons mobileNavContainer">
+            <button class="mobileNavIcon" id="hamburger">
+                <i class="fa-solid fa-bars hamburgerIcon"></i>
+            </button>
+        
+            <div class="slideOutNav">
+                <nav class="mobileMenuAndCloseContainer">
+                    <ul class="mainMenu mobileNav">
+                        <li><a class="mobileNavItem" href="./index.html">Home</a></li>
+                        <li><a class="mobileNavItem" href="#about">About</a></li>
+                        <li><a class="mobileNavItem" href="./experience.html">Experience</a></li>
+                        <li><a class="mobileNavItem" href="./projects.html">Projects</a></li>
+                    </ul>
+                    <button onclick="toggleNightMode()" class="nightModeButton"><i class="fa-solid fa-moon"></i></button>
+                    <button id="menuClose" class="menuClose">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+        
+        <nav class="navBar">
             <a href="./index.html" class="initals"><img src="./assets/circleface.png" alt="James' face"></a>
             <ul class="navLinks">
-                <li><a class="navLink" href="./index.html#about">About</a></li>
+                <li><a class="navLink" href="#about">About</a></li>
                 <li><a class="navLink" href="./experience.html">Experience</a></li>
                 <li><a class="navLink" href="./projects.html">Projects</a></li>
             </ul>
