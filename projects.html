@@ -24,7 +24,7 @@
                 <nav class="mobileMenuAndCloseContainer">
                     <ul class="mainMenu mobileNav">
                         <li  class="navListItem"><a class="mobileNavItem" href="./index.html">Home</a></li>
-                        <li  class="navListItem"><a class="mobileNavItem" href="#about">About</a></li>
+                        <li  class="navListItem"><a class="mobileNavItem" href="./index.html"#about">About</a></li>
                         <li  class="navListItem"><a class="mobileNavItem" href="./experience.html">Experience</a></li>
                         <li  class="navListItem"><a class="mobileNavItem" href="./projects.html">Projects</a></li>
                     </ul>
@@ -112,7 +112,9 @@
 
                 <div class="yearContainer">
                     <label for="year">Please pick a year (between 1950 and 2023)</label>
-                    <input type="number" id="year" min="1950" max="2023" />
+                    <select id="year">
+                        <option value="">Select a year</option>
+                    </select>
                 </div>
 
                 <div id="loading" class="loading">
