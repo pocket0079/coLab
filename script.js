@@ -56,7 +56,7 @@ formulaOneApp.loadingElement = document.getElementById('loading');
 let selectedYear;
 
 // Add an event listener to the input element
-yearInput.addEventListener('change', function (event) {
+yearInput.addEventListener('input', function (event) {
     // Retrieve the user's input value
     selectedYear = parseInt(event.target.value);
 
