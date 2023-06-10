@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/478c858f1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Inter&display=swap" rel="stylesheet">
+    <title>James Sto. Tomas - Web Developer</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <nav>
+            <a href="./index.html" class="initals"><img src="./assets/circleface.png" alt="James' face"></a>
+            <ul class="navLinks">
+                <li><a class="navLink" href="#about">About</a></li>
+                <li><a class="navLink" href="./experience.html">Experience</a></li>
+                <li><a class="navLink" href="./projects.html">Projects</a></li>
+            </ul>
+            <button onclick="toggleNightMode()" class="nightModeButton"><i class="fa-solid fa-moon"></i></button>
+        </nav>
+
+        <header id="header">
+            <h1>Hi! I'm James Sto. Tomas</h1>
+            <h2 class="jamesTitle">Front End Web Developer <br> <i class="fa-sharp fa-solid fa-location-dot"></i> Toronto, Ontario</h2>
+        </header>
+
+        <main>
+            <section class="about nightModeSection" id="about">
+                <div class="aboutMeTextAndPic">
+                    <div class="aboutMeTextContainer">
+                        <h2>About Me</h2>
+                        <p class="aboutMeText">With my unique background as a car mechanic turned web developer, I bring a distinct perspective and problem-solving
+                        approach to the world of web development. I'm motivated to build websites and web apps that are accessible, functional,
+                        visually appealing, and user-friendly. When I'm not parenting or coding, I unwind with video games. </p>
+                    </div>
+
+                    <div class="famPicContainer">
+                        <img src="./assets/jlledited.png" alt="Picture of James with 2 children" class="famPic">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact nightModeSection">
+                <h2>Contact Me</h2>
+                <div class="socialContainer">
+                    <a href="https://www.linkedin.com/in/james-sto-tomas/" class="linkedinLink socialLink">
+                        <i class="fa-brands fa-linkedin-in socialIcons footerIcons"></i>
+                    </a>
+                
+                    <a href="https://twitter.com/jamesertron" class="twitterLink socialLink">
+                        <i class="fa-brands fa-twitter socialIcons footerIcons"></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/jamesertron/" class="igLink socialLink">
+                        <i class="fa-brands fa-instagram socialIcons footerIcons"></i>
+                    </a>
+                
+                    <a href="mailto:jam3sstotomas@gmail.com" class="emailLink socialLink">
+                        <i class="fa-solid fa-envelope socialIcons footerIcons"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

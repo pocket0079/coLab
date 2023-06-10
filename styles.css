@@ -1,0 +1,271 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: 125%;
+    line-height: 1.25;
+
+}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* font-family: 'Archivo',
+sans-serif;
+font-family: 'Inter',
+sans-serif; */
+
+body {
+    background: linear-gradient(180deg, #CAD9FF 0%, #EBF1FF 57.84%);
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 3.5rem;
+    margin: 30px 0 15px 0;
+}
+
+.jamesTitle {
+    text-decoration: none;
+}
+
+h2, h3 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.75rem;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #45DFCD;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+p, a, label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* *******************************NAV****************************** */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nightMode {
+    transition: 0.3s ease;
+    background: #181922;
+    color: white;
+}
+
+.nightModeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nightModeButton:hover,
+.nightModeButton:focus {
+    transition: 0.3s ease;
+    transform: rotate(-15deg);
+}
+
+.fa-moon {
+    font-size: 1.5rem;
+    padding: 15px;
+    border: 3px solid #6E97FF;
+    border-radius: 50%;
+}
+
+.fa-moon:hover,
+.fa-moon:focus {
+    transition: 0.3s ease;
+    color:#6E97FF;
+}
+
+.initals {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.navLink {
+    background-color: #FF6DCD;
+    color: white;
+    padding: 8px 16px;
+    margin: 0 20px;
+    border-radius: 35px;
+    text-decoration: none;
+}
+
+.navLink:hover,
+.navLink:focus {
+    background-color: #5A60EA;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* **********************ABOUT*********************** */
+
+section {
+    margin: 50px 0;
+}
+
+.workExp, .about, .contact, .projectContainer, .miniProject{
+    background-color: white;
+    border-radius: 24px;
+    padding: 15px 20px;
+    box-shadow: 10px 5px 13px rgba(75, 75, 75, 0.2);
+}
+
+.nightModeSelection {
+    background-color: #070707;
+}
+
+.aboutMeTextAndPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.aboutMeTextContainer{
+    width: 75%;
+}
+
+.aboutMeText {
+    width: 100%;
+}
+
+.famPicContainer{
+    width: 50%;
+}
+
+.famPic {
+    border-radius: 24px;
+}
+/* ***********************EXPERIENCE******************* */
+.workplace {
+    margin: 25px;
+}
+
+.workDates, .languagesUsed {
+    font-size: 0.8rem;
+    margin: 15px 0;
+}
+
+.workDescription{
+    margin: 5px 0;
+}
+/* ********************PROJECTS**************** */
+
+.projectContainer {
+    display: flex;
+    margin: 60px 0;
+}
+
+.projectImg {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.projectSummary {
+    width: 100%;
+}
+
+.formulaOneContainer {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.yearContainer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.champContainer, .runnerUpContainer {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.projectButton {
+    color: black;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 3px solid #5A60EA;
+    border-radius: 35px;
+}
+
+.nightModeButtons {
+    color: white;
+}
+
+.projectButton:hover,
+.projectButton:focus {
+    background-color: #5A60EA;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+}
+
+/* *****************CONTACT********************* */
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.socialContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.socialLink {
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    margin: 0 20px;
+    padding: 15px;
+    border: 3px solid #6E97FF;
+    border-radius: 50%;
+}
+
+.socialLink:hover,
+.socialLink:focus {
+    background-color: #6E97FF;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* *********************MEDIA QUERIES************************* */
