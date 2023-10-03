@@ -68,7 +68,7 @@ yearInput.addEventListener('input', function (event) {
     formulaOneApp.loadingElement.style.display = 'block';
 });
 
-formulaOneApp.baseUrl = 'http://ergast.com/api/f1/';
+formulaOneApp.baseUrl = 'https://ergast.com/api/f1/';
 formulaOneApp.driverChamp = document.getElementById('driverChamp');
 formulaOneApp.constructorElement = document.getElementById('constructor');
 formulaOneApp.champPoints = document.getElementById('champPoints');
